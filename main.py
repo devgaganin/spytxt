@@ -84,7 +84,7 @@ async def account_login(bot: Client, m: Message):
         arg = 0
     
     
-    editable = await m.reply_text("**Enter Title**")
+    editable = await m.reply_text("𝙀𝙣𝙩𝙚𝙧 𝘽𝙖𝙩𝙘𝙝 𝙉𝙖𝙢𝙚")
     input0: Message = await bot.listen(editable.chat.id)
     raw_text0 = input0.text
     
@@ -302,7 +302,7 @@ async def account_login(bot: Client, m: Message):
                 Show = f"**Downloading:-**\n\n**Name :-** `{name}\nQuality - {raw_text2}`\n\n**Url :-** `{url}`\n\n"
                 prog = await m.reply_text(Show)
                 cc = f'**Title »** {name1} {res}.mkv\n**Caption »** {raw_text0}\n**Index »** {str(count).zfill(3)}'
-                cc1 =f'**Title »** {name1} {res}.pdf\n**Caption »** {raw_text0}\n**Index »** {str(count).zfill(3)}'
+                cc1 =f'𝙏𝙤𝙥𝙞𝙘 :  {name1} {res}.pdf\n\n𝘽𝙖𝙩𝙘𝙝 :  {raw_text0}\n\n𝘿𝙤𝙬𝙣𝙡𝙤𝙖𝙙𝙚𝙙 𝘽𝙮 : {str(count).zfill(3)}'
                 if cmd == "pdf" or "drive" in url:
                     try:
                         ka=await helper.download(url,name)
